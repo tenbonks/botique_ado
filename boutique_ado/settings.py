@@ -25,7 +25,8 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['01b488a73614.ngrok.io', 
+                 'localhost',]
 
 
 # Application definition
@@ -173,3 +174,4 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = "usd"
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
