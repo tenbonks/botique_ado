@@ -25,6 +25,7 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ngrok.io is used to help with development on local machines
 ALLOWED_HOSTS = ['ef2eb27cb522.ngrok.io', 
                  'localhost',]
 
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'profiles',
 
     #  Other
     'crispy_forms',
