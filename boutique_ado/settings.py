@@ -26,7 +26,7 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 DEBUG = True
 
 # ngrok.io is used to help with development on local machines
-ALLOWED_HOSTS = ['ef2eb27cb522.ngrok.io', 
+ALLOWED_HOSTS = ['c8555365e09a.ngrok.io', 
                  'localhost',]
 
 
