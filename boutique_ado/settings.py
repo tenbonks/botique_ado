@@ -26,7 +26,7 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 DEBUG = True
 
 # ngrok.io is used to help with development on local machines
-ALLOWED_HOSTS = ['c8555365e09a.ngrok.io', 
+ALLOWED_HOSTS = ['48412d03b2c9.ngrok.io', 
                  'localhost',]
 
 
@@ -177,3 +177,4 @@ STRIPE_CURRENCY = "usd"
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+DEFAULT_FROM_EMAIL = "boutiqeado@example.com"
