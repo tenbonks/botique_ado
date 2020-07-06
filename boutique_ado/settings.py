@@ -25,7 +25,7 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ngrok.io is used to help with development on local machines
+# ngrok.io is used to help with development on local machines, such as testing webhooks.
 ALLOWED_HOSTS = ['48412d03b2c9.ngrok.io', 
                  'localhost',]
 
