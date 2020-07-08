@@ -26,9 +26,9 @@ SECRET_KEY = 'gxq$u24g7=5_5drgj3lfo$&h-c1)a4vko^-ny&0&o3))x1c__q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ngrok.io is used to help with development on local machines, such as testing webhooks.
-ALLOWED_HOSTS = ['48412d03b2c9.ngrok.io', 
-                 'localhost',]
+
+ALLOWED_HOSTS = ['tenbonks-boutique-ado.herokuapp.com', 
+                 'localhost']
 
 
 # Application definition
@@ -121,12 +121,17 @@ WSGI_APPLICATION = 'boutique_ado.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-DATABASES = {
+if 'DATABASE_URl' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-}
+    }
 
 
 # Password validation
